@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <motion.div variants={fadeUp}>
       <Link href={`/projects#${project.id}`}>
         <motion.article
-          className="overflow-hidden rounded-xl border border-border bg-card"
+          className="overflow-hidden rounded-xl bg-card shadow-sm"
           initial="rest"
           whileHover="hover"
           variants={hoverLift}

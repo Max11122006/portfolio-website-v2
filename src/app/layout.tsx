@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
 import { siteMetadata } from "@/data/site";
 import "./globals.css";
 
@@ -27,7 +28,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased`}>
         <Navbar />
-        <main className="min-h-[calc(100vh-8rem)]">{children}</main>
+        <main className="min-h-[calc(100vh-8rem)]">
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>

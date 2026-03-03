@@ -13,7 +13,7 @@ export default function GitHubRepoCard({ repo }: GitHubRepoCardProps) {
   return (
     <motion.div variants={fadeUp}>
       <motion.article
-        className="flex h-full flex-col rounded-xl border border-border bg-card p-5"
+        className="flex h-full flex-col rounded-xl bg-card p-5 shadow-sm"
         initial="rest"
         whileHover="hover"
         variants={hoverLift}

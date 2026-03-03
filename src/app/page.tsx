@@ -18,9 +18,19 @@ const philosophyPillars = [
       "Whether it's a tolerance on a machined part or a calibration parameter in firmware, the details matter. Close enough isn't engineering.",
   },
   {
+    title: "Operational Decision-Making",
+    description:
+      "Engineering is applied under constraints. Making sound calls with incomplete information, under time pressure, is what separates design from delivery.",
+  },
+  {
     title: "Ownership",
     description:
       "From first sketch to final test, owning the full lifecycle of a build teaches more than any single specialisation ever could.",
+  },
+  {
+    title: "Real Responsibility",
+    description:
+      "Working on systems where failure has consequences — vehicles, structures, flight paths — demands a level of rigour that toy projects never teach.",
   },
 ];
 
@@ -87,10 +97,10 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection
           staggered
-          className="grid gap-8 md:grid-cols-3"
+          className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
         >
           {philosophyPillars.map((pillar) => (
-            <div key={pillar.title} className="rounded-xl border border-border bg-card p-6">
+            <div key={pillar.title} className="rounded-xl bg-card p-6 shadow-sm">
               <h3 className="font-semibold">{pillar.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">
                 {pillar.description}
